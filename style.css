@@ -28,11 +28,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* ←centerから変更 */
   z-index: 100;
   transition: background 0.3s;
 }
-
 
 .logo {
   display: flex;
@@ -81,7 +79,7 @@ body {
   padding: 6px 12px;
   border-radius: 6px;
   transition: 0.3s;
-   margin-bottom: 4px;
+  margin-bottom: 4px; /* 下のスペース確保 */
 }
 
 .contact:hover {
@@ -263,8 +261,15 @@ main li {
     word-break: break-word;
   }
 
+  /* 最後のリンクの下線を消す */
   .menu a:last-child {
     border-bottom: none;
+  }
+
+  /* 修正部分：お問い合わせボタン用 */
+  .menu a.contact {
+    border-bottom: none; /* 通常の下線を消す */
+    margin-bottom: 4px;  /* 赤線ボーダー表示用の余白 */
   }
 
   .card-container {
@@ -295,4 +300,5 @@ main li {
     font-size: 16px;
   }
 }
+
 
