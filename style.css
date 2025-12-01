@@ -27,7 +27,8 @@ body {
   padding: 12px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* ←centerから変更 */
+  justify-content: space-between;
+  /* ←centerから変更 */
   z-index: 100;
   transition: background 0.3s;
 }
@@ -293,4 +294,3 @@ main li {
     font-size: 16px;
   }
 }
-
