@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>活動報告 - 学生お助け隊</title>
+  <link rel="icon" href="help.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ナビバー -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="help.ico" class="logo-icon" alt="学生お助け隊ロゴ">
+      <span>学生お助け隊</span>
+    </a>
+
+    <button class="hamburger" id="hamburgerBtn">☰</button>
+
+    <div class="menu" id="menu">
+      <a href="index.html#top">TOP</a>
+      <a href="aisatu.html">代表挨拶</a>
+      <a href="report.html">活動報告</a>
+      <span class="contact" style="cursor:default;">
+        お問い合わせ：090-9226-6313
+      </span>
+    </div>
+  </nav>
+
+  <!-- TOPセクション -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>活動報告</h1>
+      <p>学生お助け隊の活動の様子をご紹介します</p>
+    </div>
+  </section>
+
+  <!-- 本文 -->
+  <main>
+    <section>
+
+      <!-- 日付タグ -->
+      <p style="color:#555; font-size:14px; margin-bottom:6px;">2026年1月 活動報告</p>
+
+      <h2>紫の会の皆さまと交流しました</h2>
+
+      <img src="murasaki.jpeg" alt="紫の会の皆さまとの交流の様子"
+        style="width:100%; max-width:600px; border-radius:16px; margin:20px 0;">
+
+      <p>
+        先日、「紫の会」の皆さまとお話をさせていただき、
+        私たち学生お助け隊の企画について説明をさせていただきました。
+      </p>
+
+      <p>
+        お一人おひとりの言葉に重みがあり、とてもあたたかく、
+        私たち自身がたくさんの気づきと学びをいただく時間となりました。
+      </p>
+
+      <p>
+        貴重なお時間を本当にありがとうございました。
+        いただいたお話を、今後の活動にしっかりと活かしていきたいと思います。
+      </p>
+
+    </section>
+  </main>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const menu = document.getElementById("menu");
+    hamburgerBtn.addEventListener("click", () => {
+      menu.classList.toggle("open");
+    });
+  </script>
+
+</body>
+
+</html>
